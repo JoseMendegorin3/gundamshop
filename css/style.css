@@ -1,0 +1,364 @@
+/* walang matutuloggggg */
+body {
+    
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:brushscript;
+  
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 1000x;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+
+    
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #acacac;
+    font-family:brushscript;
+    text-align: center;
+}
+
+a {
+    color: #606264;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #44484c;
+}
+
+/* Header and Navigation */
+header {
+    width: 100%;
+    border: 2px solid #53535531;
+    background-color: rgb(90, 91, 92);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul a {
+    color: #363434;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 1px 15px;
+    border-radius: 4px;
+}
+
+header nav ul a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Home Page Specific Styles */
+.home {
+    background: url('images/home-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container {
+
+    background-color: rgba(53, 54, 59, 0.9);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.home h1 {
+    font-size: 3rem;
+}
+
+.home a {
+    background-color: #42474d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.home a:hover {
+    background-color: #8699af;
+}
+
+/* Inventory Table */
+.inventory-table {
+    margin: 20px 0;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    background-color: #ffffff;
+    color: #666;
+}
+
+tr:hover td {
+    background-color: #8d8a8a;
+}
+
+/* Form Inputs and Buttons */
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="number"], form input, form button {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="number"] {
+    width: 80px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+/* Products Grid */
+/* Style for the product image container to ensure uniform size */
+.product-item img {
+    width: 100%;
+    max-width: 200px;  /* Maximum width you prefer */
+    height: auto;     /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+/* Responsive layout for the products grid */
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between product items */
+    justify-content: center;
+}
+.product-item:hover {
+    transform: scale(1.05);
+}
+.product-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+    width: calc(25% - 40px); /* Four items per row, adjust as needed */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        width: calc(50% - 40px); /* Two items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: calc(100% - 40px); /* One item per row on very small screens */
+    }
+}
+
+
+/* Links */
+.links {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.links a {
+    margin: 0 10px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #544b4b;
+    text-align: center;
+    padding: px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/**/
+
+
+/**/
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+
+header .logo img.logo-img {
+    height: 40px; /* Adjust as necessary */
+    margin-right: 10px;
+}
+
+header .logo span {
+    color: #f39c12;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+/* Contact Form to */
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e67e22;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links h2 {
+    margin-bottom: 10px;
+}
+
+.social-links .social-link {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links .social-link img {
+    height: 40px; /* Adjust as necessary */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Add this to your style.css file */
+.search-result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.search-result.product-item {
+    width: calc(25% - 20px); /* adjust the width to match your product section */
+    margin: 10px;
+}
+
+.search-result.product-item img {
+    width: 100%;
+    height: 150px; /* adjust the height to match your product section */
+    object-fit: cover;
+}
+
+.search-result.product-details {
+    padding: 10px;
+}
+
